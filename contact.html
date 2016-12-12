@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Herman Eye Care</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="jquery-3.1.1.js"></script>
+
+    <link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/ct-paper.css" rel="stylesheet"/>
+    <link href="assets/css/demo.css" rel="stylesheet" />
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <script src="jquery-3.1.1.js"></script>
+
+  <link rel="icon"
+          type="image/png"
+          href="/assets/img/eyelogo.png" />
+</head>
+
+<style>
+    body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+  background-color:#F4F3EF!important;
+  
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  margin-top: 50px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #ddd;
+}
+
+body, html, .main {
+    height: 100%;
+}
+
+@-moz-keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            -moz-transform: translateY(0);
+            transform: translateY(0);
+        }
+        40% {
+            -moz-transform: translateY(-30px);
+            transform: translateY(-30px);
+        }
+        60% {
+            -moz-transform: translateY(-15px);
+            transform: translateY(-15px);
+        }
+    }
+    @-webkit-keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+        40% {
+            -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+        }
+        60% {
+            -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+        }
+    }
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+        40% {
+            -moz-transform: translateY(-30px);
+            -ms-transform: translateY(-30px);
+            -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+        }
+        60% {
+            -moz-transform: translateY(-15px);
+            -ms-transform: translateY(-15px);
+            -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+        }
+    }
+
+    .glyphicon-chevron-down {
+        color: white;
+        margin-top: 200px;
+        font-size: 38px;
+    }
+    
+    .glyphicon-print{
+    	color: white;
+    }
+
+    .bounce {
+        -moz-animation: bounce 2s infinite;
+        -webkit-animation: bounce 2s infinite;
+        animation: bounce 2s infinite;
+    }
+    
+    .container {
+      width: 50%;
+    }
+
+.animate {
+    -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.navbar-bootsnipp {
+    background-color: rgb(255, 255, 255);
+	border-color: rgb(95, 176, 228);
+	border-radius: 0px;
+	margin-bottom: 0px;
+	z-index: 100;
+}
+.navbar-bootsnipp:nth-of-type(2) {
+	border-top-width: 1px;
+	z-index: 50
+}
+
+.navbar-bootsnipp.affix-top {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+.navbar-bootsnipp.affix {
+	top: 0px;
+	width: 100%;
+}
+.navbar-bootsnipp .navbar-toggle .icon-bar {
+	background-color: rgb(95, 176, 228);
+}
+
+.navbar-bootsnipp .navbar-brand {
+	color: rgb(95, 176, 228);
+	font-weight: 900;
+	letter-spacing: 2px;
+}
+
+.navbar-bootsnipp .navbar-nav > li > a {
+	border: 0px solid rgb(95, 176, 228);
+	color: rgb(120, 120, 120);
+	padding: 15px 14px;
+}
+
+.navbar-bootsnipp .navbar-nav > li > form > .input-group > input,
+.navbar-bootsnipp .navbar-nav > li > form > .input-group > .input-group-btn > .btn {
+	border-radius: 0px;
+}
+
+.navbar-bootsnipp .navbar-nav > li:not(.disabled).open > a,
+.navbar-bootsnipp .navbar-nav > li:not(.disabled).active > a,
+.navbar-bootsnipp .navbar-nav > li:not(.disabled) > a:hover, 
+.navbar-bootsnipp .navbar-nav > li:not(.disabled) > a:focus {
+	border-left-width: 5px;
+	color: rgb(95, 176, 228);
+	padding-left: 10px;
+}
+.navbar-bootsnipp .navbar-nav > li.disabled > a {
+	color: rgb(200, 200, 200);
+}
+
+.navbar-bootsnipp .navbar-nav > li > .dropdown-menu {
+	border-radius: 0;
+	margin-right: -1px;
+	min-width: 220px;
+	padding: 0px;
+}
+.navbar-bootsnipp .navbar-nav > li:not(.dropdown-right) > .dropdown-menu {
+	left: 0px;
+	margin-left: -1px;
+	right: auto;
+}
+.navbar-bootsnipp .navbar-nav > li > .dropdown-menu > li > a {
+	border-left: 0px solid rgb(95, 176, 228);
+	color: rgb(120, 120, 120);
+	font-size: 16px;
+	font-weight: 400;
+	padding: 10px 20px;
+	white-space: nowrap;
+}
+.navbar-bootsnipp .navbar-nav > li > .dropdown-menu > li.active > a, 
+.navbar-bootsnipp .navbar-nav > li > .dropdown-menu > li > a:hover, 
+.navbar-bootsnipp .navbar-nav > li > .dropdown-menu > li > a:focus {
+	background-color: rgb(245, 245, 245);
+	border-left-width: 5px;
+	padding-left: 15px;
+}
+
+.navbar .bootsnipp-profile > a {
+	padding-bottom: 9px; 
+	padding-top: 9px; 
+}
+.navbar .bootsnipp-profile > a > img {
+	border-radius: 50%;
+	width: 32px;
+}
+.navbar .bootsnipp-profile > .dropdown-menu {
+	width: 320px;
+}
+.navbar .bootsnipp-profile > .dropdown-menu > li > .row {
+	padding: 5px 15px;
+}
+.navbar .bootsnipp-profile > .dropdown-menu > li > .row img {
+	width: 100%;
+}
+
+.navbar-bootsnipp .bootsnipp-search {
+	display: none;
+}
+.navbar-bootsnipp .bootsnipp-search .form-control {
+	background-color: rgb(235, 235, 235);
+	border-radius: 0px;
+	border-width: 0px;
+	font-size: 24px;
+	padding: 30px 0px;
+}
+.navbar-bootsnipp .bootsnipp-search .form-control {
+	background-color: rgb(235, 235, 235);
+	border-radius: 0px;
+	border-width: 0px;
+	font-size: 24px;
+	padding: 25px 0px;
+}
+.navbar-bootsnipp .bootsnipp-search .form-control:focus {
+	border-color: transparent;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn {
+	padding: 14px 16px;
+	border-radius: 0px;
+}
+.navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn.active,
+.navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn:hover,
+.navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn:focus {
+	padding: 14px 16px 14px 15px;
+}
+.navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn-default {
+	background-color: rgb(245, 245, 245);
+}
+.nav-padding {
+	padding-top: 61px;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-bootsnipp .navbar-brand {
+    	font-size: 20px;
+		height: auto;
+		padding: 15px 5px;
+	}
+	.navbar-bootsnipp .navbar-nav > li > a {
+		font-size: 16px;
+		letter-spacing: 1px;
+	}
+	.navbar-bootsnipp .navbar-nav > li:not(.disabled).open > a,
+	.navbar-bootsnipp .navbar-nav > li:not(.disabled).active > a,
+	.navbar-bootsnipp .navbar-nav > li:not(.disabled) > a:hover, 
+	.navbar-bootsnipp .navbar-nav > li:not(.disabled) > a:focus {
+		border-bottom-width: 5px;
+		border-left-width: 0px;
+		padding-bottom: 10px;
+		padding-left: 14px;
+	}
+
+	.navbar-bootsnipp .navbar-nav > li.disabled > a {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+
+	.navbar-bootsnipp .bootsnipp-search {
+		background-color: rgb(235, 235, 235);
+		display: block;
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		-webkit-transform: rotateX(-90deg);
+		-moz-transform: rotateX(-90deg);
+		-o-transform: rotateX(-90deg);
+		-ms-transform: rotateX(-90deg);
+		transform: rotateX(-90deg);
+		-webkit-transform-origin: 0 0 0;
+		-moz-transform-origin: 0 0 0;
+		-o-transform-origin: 0 0 0;
+		-ms-transform-origin: 0 0 0;
+		transform-origin: 0 0 0;
+		visibility: hidden;
+	}
+	.navbar-bootsnipp .bootsnipp-search.open {
+		-webkit-transform: rotateX(0deg);
+		-moz-transform: rotateX(0deg);
+		-o-transform: rotateX(0deg);
+		-ms-transform: rotateX(0deg);
+		transform: rotateX(0deg);
+		visibility: visible;	
+	}
+	.navbar-bootsnipp .bootsnipp-search > .container {
+		padding: 0px;
+	}    
+}
+
+#hermanlogo {
+    width: 100px;
+    height: 40px;
+    margin-top: -9px;
+}
+
+.main_title {
+    font-family: "Oswald";
+	font-size: 44px;
+	padding-bottom: 30px;
+	margin-top: 30px;
+	text-align: center;
+	line-height: 65px;
+	text-transform: uppercase;
+	color: #2b2b2b;
+}
+.main_title span {
+	border-bottom: 1px solid #666;
+}
+
+.box {
+    border-radius: 3px;
+	/*box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);*/
+	padding: 38px 30px;
+	text-align: right;
+	display: block;
+	/* margin-top: 60px; */cursor: pointer;
+}
+.box-icon span {
+	color: #fff;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+.info h4 {
+	color: #555454;
+	font-size: 22px;
+	margin: 0px;
+	font-family: Century Gothic;
+	font-weight: 100;
+	padding: 28px 0px;
+	text-transform: uppercase;
+}
+.info > p {
+	color: #717171;
+	font-size: 16px;
+	text-align: center;
+}
+
+.box >.box-icon {
+    border: 2px solid #82b440;
+}
+.box:hover >.box-icon {
+	border: 2px solid #82b440;
+	background-color: #fff;
+	color: #82b440;
+	-webkit-transition: All 0.5s ease;
+	-moz-transition: All 0.5s ease;
+	-o-transition: All 0.5s ease;
+}
+.box:hover >.box-icon >span {
+	color: #82b440;
+}
+.box-icon {
+	background-color: #82b440;
+	border-radius: 50%;
+	display: table;
+	height: 120px;
+	margin: 0 auto;
+	width: 120px;/*margin-top: -61px;*/
+}
+
+#test {
+    margin-top: 90px;
+}
+
+#products{
+    background: rgb(255,255,255);
+    text-align: center;
+    border: 0px;
+}
+
+.well {
+    background: rgb(244, 243, 239);
+}
+
+.block1 {color:black;width:100%;;border:1px solid green; height: 750px;background-color:white;}
+      .block3 {float:left; width:700px; padding-left:50px;padding-top: 50px;}
+      .block2 {color:black;width:400px;border:0px ;position:relative;float:right;background-color: white;padding-top: 50px; padding-right: 50px;}
+    
+</style>
+
+<script>
+function myFunction() {
+    window.print();
+}
+
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<body>
+<nav class="[ navbar navbar-fixed-top ][ navbar-bootsnipp animate ]" role="navigation">
+    	<div class="[ container ]">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="[ navbar-header ]">
+				<button type="button" class="[ navbar-toggle ]" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="[ sr-only ]">Toggle navigation</span>
+					<span class="[ icon-bar ]"></span>
+					<span class="[ icon-bar ]"></span>
+					<span class="[ icon-bar ]"></span>
+				</button>
+				<div class="[ animbrand ]">
+					<a class="[ navbar-brand ][ animate ]" href="index.html"><img src="assets/img/hermanlogo.png" id=hermanlogo></a>
+				</div>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="[ collapse navbar-collapse ]" id="bs-example-navbar-collapse-1">
+				<ul class="[ nav navbar-nav navbar-right ]">
+					<li class="[ visible-xs ]">
+						<form action="http://bootsnipp.com/search" method="GET" role="search">
+							<div class="[ input-group ]">
+								<input type="text" class="[ form-control ]" name="q" placeholder="Search for snippets">
+								<span class="[ input-group-btn ]">
+									<button class="[ btn btn-primary ]" type="submit"><span class="[ glyphicon glyphicon-search ]"></span></button>
+									<button class="[ btn btn-danger ]" type="reset"><span class="[ glyphicon glyphicon-remove ]"></span></button>
+								</span>
+							</div>
+						</form>
+					</li>
+					<li><a class="animate" href="index.html">Home</a></li>
+					<li><a href="about.html" class="[ animate ]">About</a></li>
+				
+					<li><a class="animate" href="services.html">Products & Services</a></li>
+					<li class="active"><a class="animate" href="#">Contact Us</a></li>
+					<li class="animate"><a class="animate" disabled><span class="glyphicon glyphicon-earphone"></span> 204-623-1400</a></li>
+</a></li>
+
+					
+                    		</ul>
+			</div>
+		</div>
+	</nav>
+<!--
+Bootstrap Line Tabs by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+-->
+<div clsas="container-fluid" id=test>
+<div class='block1'>
+
+        <div class='block3'>
+        	<h4>Visit Us at Herman Eye Care in The Pas</h4>
+            <p>Herman Eye Care provides eye exams and also dispenses eyeglasses, contact lenses and sunglasses. If you are interested in learning more about our products and services, or if you would like to schedule an appointment, please feel free to give us a call.</p>
+            <p>If you are visiting our office, we are located on Highway 10 across from the RCMP station.</p>
+            
+            <h4>Service Area</h4>
+            <li>The Pas</li>
+            <li>OCN</li>
+            <li>Surrounding Area</li>
+
+            
+            <h4>Payment Methods</h4>
+            <div class="payment-wrapper clearfix" style="text-align: left;"><img class="item" src="assets/img/visa.png" width="55" height="36" title="Visa" alt="Visa" style="padding-right: 0px;padding-left: 0px;"/><img class="item" src="assets/img/mastercard.png" width="55" height="36" title="Master Card" alt="Master Card" style="padding-right: 0px;padding-left: 0px;"/><img class="item" src="assets/img/cash.png" width="55" height="36" title="Cash" alt="Cash" style="padding-right: 0px;padding-left: 0px;"/><img class="item" src="assets/img/cheque.png" width="55" height="36" title="Cheque" alt="Cheque" style="padding-right: 0px;padding-left: 0px;"/></div>
+  <br>
+  
+ 
+ 
+ </div>
+
+        <div class='block2'><div class="well">
+      <b>Address</b>
+      <p>362 Fischer Ave<br>
+        The Pas, MB<br>
+        R9A 1M3</p>
+     
+        <b>Phone</b>
+        <p>204-623-1400</p>
+        <b>Opening Hours</b>
+        <p>Monday - Friday: 8:30AM to 12:30PM & 1:00PM to 5:00PM<br>
+        Saturday & Sunday: Closed
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2355.1699813241767!2d-101.25328378372569!3d53.82205178008159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52f9eb5998eeeb5d%3A0x4f066826a356cf2f!2s362+Fischer+Ave%2C+The+Pas%2C+MB+R9A!5e0!3m2!1sen!2sca!4v1481240211776" width="300" height="300" frameborder="1" style="border:2" allowfullscreen></iframe>
+      
+      </div></DIV>
+
+    </div>
+</div>
+</body>
+
+
+</html>

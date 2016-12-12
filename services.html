@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Herman Eye Care</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="jquery-3.1.1.js"></script>
+
+    <link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/ct-paper.css" rel="stylesheet"/>
+    <link href="assets/css/demo.css" rel="stylesheet" />
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <script src="jquery-3.1.1.js"></script>
+<link rel="icon"
+          type="image/png"
+          href="/assets/img/eyelogo.png" />
+</head>
+
+<style>
+    body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+  background-color:#282E34;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  margin-top: 50px;
+}
+
+
+
+body, html, .main {
+    height: 100%;
+}
+
+@-moz-keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            -moz-transform: translateY(0);
+            transform: translateY(0);
+        }
+        40% {
+            -moz-transform: translateY(-30px);
+            transform: translateY(-30px);
+        }
+        60% {
+            -moz-transform: translateY(-15px);
+            transform: translateY(-15px);
+        }
+    }
+    @-webkit-keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+        40% {
+            -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+        }
+        60% {
+            -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+        }
+    }
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+        40% {
+            -moz-transform: translateY(-30px);
+            -ms-transform: translateY(-30px);
+            -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+        }
+        60% {
+            -moz-transform: translateY(-15px);
+            -ms-transform: translateY(-15px);
+            -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+        }
+    }
+
+    .glyphicon-chevron-down {
+        color: white;
+        margin-top: 200px;
+        font-size: 38px;
+    }
+    
+    .glyphicon-print{
+    	color: white;
+    }
+
+    .bounce {
+        -moz-animation: bounce 2s infinite;
+        -webkit-animation: bounce 2s infinite;
+        animation: bounce 2s infinite;
+    }
+    
+    .container {
+      width: 50%;
+    }
+
+.animate {
+    -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.navbar-bootsnipp {
+    background-color: rgb(255, 255, 255);
+	border-color: rgb(95, 176, 228);
+	border-radius: 0px;
+	margin-bottom: 0px;
+	z-index: 100;
+}
+.navbar-bootsnipp:nth-of-type(2) {
+	border-top-width: 1px;
+	z-index: 50
+}
+
+.navbar-bootsnipp.affix-top {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+.navbar-bootsnipp.affix {
+	top: 0px;
+	width: 100%;
+}
+.navbar-bootsnipp .navbar-toggle .icon-bar {
+	background-color: rgb(95, 176, 228);
+}
+
+.navbar-bootsnipp .navbar-brand {
+	color: rgb(95, 176, 228);
+	font-weight: 900;
+	letter-spacing: 2px;
+}
+
+.navbar-bootsnipp .navbar-nav > li > a {
+	border: 0px solid rgb(95, 176, 228);
+	color: rgb(120, 120, 120);
+	padding: 15px 14px;
+}
+
+.navbar-bootsnipp .navbar-nav > li > form > .input-group > input,
+.navbar-bootsnipp .navbar-nav > li > form > .input-group > .input-group-btn > .btn {
+	border-radius: 0px;
+}
+
+.navbar-bootsnipp .navbar-nav > li:not(.disabled).open > a,
+.navbar-bootsnipp .navbar-nav > li:not(.disabled).active > a,
+.navbar-bootsnipp .navbar-nav > li:not(.disabled) > a:hover, 
+.navbar-bootsnipp .navbar-nav > li:not(.disabled) > a:focus {
+	border-left-width: 5px;
+	color: rgb(95, 176, 228);
+	padding-left: 10px;
+}
+.navbar-bootsnipp .navbar-nav > li.disabled > a {
+	color: rgb(200, 200, 200);
+}
+
+.navbar-bootsnipp .navbar-nav > li > .dropdown-menu {
+	border-radius: 0;
+	margin-right: -1px;
+	min-width: 220px;
+	padding: 0px;
+}
+.navbar-bootsnipp .navbar-nav > li:not(.dropdown-right) > .dropdown-menu {
+	left: 0px;
+	margin-left: -1px;
+	right: auto;
+}
+.navbar-bootsnipp .navbar-nav > li > .dropdown-menu > li > a {
+	border-left: 0px solid rgb(95, 176, 228);
+	color: rgb(120, 120, 120);
+	font-size: 16px;
+	font-weight: 400;
+	padding: 10px 20px;
+	white-space: nowrap;
+}
+.navbar-bootsnipp .navbar-nav > li > .dropdown-menu > li.active > a, 
+.navbar-bootsnipp .navbar-nav > li > .dropdown-menu > li > a:hover, 
+.navbar-bootsnipp .navbar-nav > li > .dropdown-menu > li > a:focus {
+	background-color: rgb(245, 245, 245);
+	border-left-width: 5px;
+	padding-left: 15px;
+}
+
+.navbar .bootsnipp-profile > a {
+	padding-bottom: 9px; 
+	padding-top: 9px; 
+}
+.navbar .bootsnipp-profile > a > img {
+	border-radius: 50%;
+	width: 32px;
+}
+.navbar .bootsnipp-profile > .dropdown-menu {
+	width: 320px;
+}
+.navbar .bootsnipp-profile > .dropdown-menu > li > .row {
+	padding: 5px 15px;
+}
+.navbar .bootsnipp-profile > .dropdown-menu > li > .row img {
+	width: 100%;
+}
+
+.navbar-bootsnipp .bootsnipp-search {
+	display: none;
+}
+.navbar-bootsnipp .bootsnipp-search .form-control {
+	background-color: rgb(235, 235, 235);
+	border-radius: 0px;
+	border-width: 0px;
+	font-size: 24px;
+	padding: 30px 0px;
+}
+.navbar-bootsnipp .bootsnipp-search .form-control {
+	background-color: rgb(235, 235, 235);
+	border-radius: 0px;
+	border-width: 0px;
+	font-size: 24px;
+	padding: 25px 0px;
+}
+.navbar-bootsnipp .bootsnipp-search .form-control:focus {
+	border-color: transparent;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn {
+	padding: 14px 16px;
+	border-radius: 0px;
+}
+.navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn.active,
+.navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn:hover,
+.navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn:focus {
+	padding: 14px 16px 14px 15px;
+}
+.navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn-default {
+	background-color: rgb(245, 245, 245);
+}
+.nav-padding {
+	padding-top: 61px;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-bootsnipp .navbar-brand {
+    	font-size: 20px;
+		height: auto;
+		padding: 15px 5px;
+	}
+	.navbar-bootsnipp .navbar-nav > li > a {
+		font-size: 16px;
+		letter-spacing: 1px;
+	}
+	.navbar-bootsnipp .navbar-nav > li:not(.disabled).open > a,
+	.navbar-bootsnipp .navbar-nav > li:not(.disabled).active > a,
+	.navbar-bootsnipp .navbar-nav > li:not(.disabled) > a:hover, 
+	.navbar-bootsnipp .navbar-nav > li:not(.disabled) > a:focus {
+		border-bottom-width: 5px;
+		border-left-width: 0px;
+		padding-bottom: 10px;
+		padding-left: 14px;
+	}
+
+	.navbar-bootsnipp .navbar-nav > li.disabled > a {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+
+	.navbar-bootsnipp .bootsnipp-search {
+		background-color: rgb(235, 235, 235);
+		display: block;
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		-webkit-transform: rotateX(-90deg);
+		-moz-transform: rotateX(-90deg);
+		-o-transform: rotateX(-90deg);
+		-ms-transform: rotateX(-90deg);
+		transform: rotateX(-90deg);
+		-webkit-transform-origin: 0 0 0;
+		-moz-transform-origin: 0 0 0;
+		-o-transform-origin: 0 0 0;
+		-ms-transform-origin: 0 0 0;
+		transform-origin: 0 0 0;
+		visibility: hidden;
+	}
+	.navbar-bootsnipp .bootsnipp-search.open {
+		-webkit-transform: rotateX(0deg);
+		-moz-transform: rotateX(0deg);
+		-o-transform: rotateX(0deg);
+		-ms-transform: rotateX(0deg);
+		transform: rotateX(0deg);
+		visibility: visible;	
+	}
+	.navbar-bootsnipp .bootsnipp-search > .container {
+		padding: 0px;
+	}    
+}
+
+#hermanlogo {
+    width: 100px;
+    height: 40px;
+    margin-top: -9px;
+}
+
+.main_title {
+    font-family: "Oswald";
+	font-size: 44px;
+	padding-bottom: 30px;
+	margin-top: 30px;
+	text-align: center;
+	line-height: 65px;
+	text-transform: uppercase;
+	color: #2b2b2b;
+}
+.main_title span {
+	border-bottom: 1px solid #666;
+}
+
+.box {
+    border-radius: 3px;
+	/*box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);*/
+	padding: 38px 30px;
+	text-align: right;
+	display: block;
+	/* margin-top: 60px; */cursor: pointer;
+}
+.box-icon span {
+	color: #fff;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+.info h4 {
+	color: #555454;
+	font-size: 22px;
+	margin: 0px;
+	font-family: Century Gothic;
+	font-weight: 100;
+	padding: 28px 0px;
+	text-transform: uppercase;
+}
+.info > p {
+	color: #717171;
+	font-size: 16px;
+	text-align: center;
+}
+
+.box >.box-icon {
+    border: 2px solid #82b440;
+}
+.box:hover >.box-icon {
+	border: 2px solid #82b440;
+	background-color: #fff;
+	color: #82b440;
+	-webkit-transition: All 0.5s ease;
+	-moz-transition: All 0.5s ease;
+	-o-transition: All 0.5s ease;
+}
+.box:hover >.box-icon >span {
+	color: #82b440;
+}
+.box-icon {
+	background-color: #82b440;
+	border-radius: 50%;
+	display: table;
+	height: 120px;
+	margin: 0 auto;
+	width: 120px;/*margin-top: -61px;*/
+}
+
+#about {
+    margin-top: 45px;
+}
+
+#products{
+    background: rgb(255,255,255);
+    text-align: center;
+    border: 0px;
+}
+
+/* Tablet and bigger */
+@media ( min-width: 768px ) {
+    .grid-divider {
+        position: relative;
+        padding: 0;
+    }
+    .grid-divider>[class*='col-'] {
+        position: static;
+    }
+    .grid-divider>[class*='col-']:nth-child(n+2):before {
+        content: "";
+        border-left: 1px solid #DDD;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+    .col-padding {
+        padding: 0 15px;
+    }
+}
+
+p {
+    font-family: century gothic;
+}
+
+h2 {
+    font-family: Century Gothic;
+}
+</style>
+
+<script>
+function myFunction() {
+    window.print();
+}
+
+</script>
+
+<body>
+<nav class="[ navbar navbar-fixed-top ][ navbar-bootsnipp animate ]" role="navigation">
+    	<div class="[ container ]">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="[ navbar-header ]">
+				<button type="button" class="[ navbar-toggle ]" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="[ sr-only ]">Toggle navigation</span>
+					<span class="[ icon-bar ]"></span>
+					<span class="[ icon-bar ]"></span>
+					<span class="[ icon-bar ]"></span>
+				</button>
+				<div class="[ animbrand ]">
+					<a class="[ navbar-brand ][ animate ]" href="index.html"><img src="assets/img/hermanlogo.png" id=hermanlogo></a>
+				</div>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="[ collapse navbar-collapse ]" id="bs-example-navbar-collapse-1">
+				<ul class="[ nav navbar-nav navbar-right ]">
+					<li class="[ visible-xs ]">
+						<form action="http://bootsnipp.com/search" method="GET" role="search">
+							<div class="[ input-group ]">
+								<input type="text" class="[ form-control ]" name="q" placeholder="Search for snippets">
+								<span class="[ input-group-btn ]">
+									<button class="[ btn btn-primary ]" type="submit"><span class="[ glyphicon glyphicon-search ]"></span></button>
+									<button class="[ btn btn-danger ]" type="reset"><span class="[ glyphicon glyphicon-remove ]"></span></button>
+								</span>
+							</div>
+						</form>
+					</li>
+					<li><a class="animate" href="index.html">Home</a></li>
+					<li><a href="about.html" class="[ animate ]">About</a></li>
+				
+					<li class="active"><a class="animate" href="#register">Products & Services</a></li>
+					<li><a class="animate" href="contact.html">Contact Us</a></li>
+					<li class="animate"><a class="animate" disabled><span class="glyphicon glyphicon-earphone"></span> 204-623-1400</a></li>
+</a></li>
+
+					
+                    		</ul>
+			</div>
+		</div>
+	</nav>
+<!--
+Bootstrap Line Tabs by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+-->
+
+   <div class="section" id=about>
+           
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+	<div class="row">
+      <div class="page-header">
+        <center><h2>Our <font color="#B09A75">Services</font></h2></center>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="box">
+          <div class="box-icon"> <span class="fa fa-4x fa-eye"></span> </div>
+          <div class="info">
+            <h4 class="text-center">Eye Exams</h4>
+             </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="box">
+          <div class="box-icon"> <span class="fa fa-4x fa-plus"></span> </div>
+          <div class="info">
+            <h4 class="text-center">Diagnosis and treatment of eye disease</h4>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="box">
+          <div class="box-icon"> <span class="fa fa-4x fa-book"></span> </div>
+          <div class="info">
+            <h4 class="text-center">Surgical co-management</h4>
+             </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="box">
+          <div class="box-icon"> <span class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></span> </div>
+          <div class="info">
+            <h4 class="text-center">and much more</h4>
+             </div>
+        </div>
+      </div>
+      
+    </div>
+
+<!--<div class="page-header">
+	<center><h2>Vision Correction Products</h2></center>
+</div>
+<ul class = "media-list">
+   <li class = "media">
+      <a class = "pull-left" href = "#">
+         <img class = "media-object" src = "assets/img/glasses.jpg" width=64 height=64>
+      </a>
+      
+      <div class = "media-body">
+         <h4 class = "media-heading">Eyewear</h4>
+			
+         <p>
+            Find eyeglasses and sunglasses that offer you the functionality and aesthetic style that you are looking for. You can even find safety frames and other specialized lenses.
+         </p>
+         
+         <!-- Nested media object 
+            <a class = "pull-left" href = "#">
+               <img class = "media-object" src = "/bootstrap/images/64.jpg" 
+                  >
+            </a>
+            
+            <div class = "media-body">
+               <h4 class = "media-heading">Contacts</h4>
+               We also dispense comfortable contacts matched to your specific prescription.
+               This is some sample text. This is some sample text.
+               
+               <!-- Nested media object 
+               <div class = "media">
+                  <a class = "pull-left" href = "#">
+                     <img class = "media-object" src = "/bootstrap/images/64.jpg" 
+                        >
+                  </a>
+                  
+                  <div class = "media-body">
+                     <h4 class = "media-heading">Schedule an Appointment</h4>
+                     Schedule an appointment to learn more about how we can take care of your vision.
+                  </div>
+                  
+               </div>
+            </div>
+            
+         </div>
+         </div>
+       </li>
+</ul>-->
+</div>
+
+<div class="container">
+    <div class="page-header">
+        <center><h2>Our <font color="#B09A75">Products</font></h2></center>
+    </div>
+    <div class="row grid-divider">
+    <div class="col-sm-4">
+      <div class="col-padding">
+        <center><h3>Eyewear</h3></center>
+        <p>Find eyeglasses and sunglasses that offer you the functionality and aesthetic style that you are looking for.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="col-padding">
+        <center><h3>Contacts</h3></center>
+        <p>We also dispense comfortable contacts matched to your specific prescription.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="col-padding">
+        <center><h3>Ask Us</h3></center>
+        <p>Schedule an appointment to learn more about how we can take care of your vision. </p>
+      </div>
+    </div>
+    </div>
+
+</div>
+
+    </div>
+  <!--  <div style="color: #ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;" id=jump>
+ <div class="row">
+      <div class="page-header">
+        <center><h2>Vision Correction Products</h2></center>
+    </div>
+ <center> <p>Find eyeglasses and sunglasses that offer you the functionality and aesthetic style that you are looking for. You can even find safety frames and other specialized lenses.
+<br><br>
+We also dispense comfortable contacts matched to your specific prescription.
+<br><br>
+Schedule an appointment to learn more about how we can take care of your vision.</p></center>
+</div>
+   </div>-->
+   
+ <!--  <div class="col-md-4">
+    <blockquote class="quote-box">
+     
+      <p class="quote-text">
+       Find eyeglasses and sunglasses that offer you the functionality and aesthetic style that you are looking for. You can even find safety frames and other specialized lenses. 
+      </p>
+      <hr>
+      
+    </blockquote>
+     
+</div>
+
+<div class="col-md-4">
+	<blockquote class="quote-box">
+     
+      <p class="quote-text">
+     We also dispense comfortable contacts matched to your specific prescription.<br><br></p>
+      <hr>
+      
+    </blockquote>
+    
+</div>
+<div class="col-md-4">
+	<blockquote class="quote-box">
+     
+      <p class="quote-text">
+      Schedule an appointment to learn more about how we can take care of your vision. <br><br></p>
+      <hr>
+      
+    </blockquote>
+    
+</div>-->
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: center;">
+  	<h3 style="text-align:center;"> EYEWEAR</h3><br>
+    <p>At Herman Eye Care, we carry a number of vision correction products that cater to a variety of styles and ways of life. Stop in to learn more about our selection, and find the product that is right for you.</p>
+
+    </div>
+</div>
+
+</body>
+
+
+</html>
