@@ -21,6 +21,7 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <script src="jquery-3.1.1.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     
 <link rel="icon"
           type="image/png"
@@ -33,7 +34,36 @@
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
-  background-color:#F4F3EF;
+  background-color: #f2f2f2;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  position: relative;
+  opacity: 0.6;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("assets/img/boat1.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("assets/img/eyes.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("assets/img/store.jpg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("assets/img/photo1.png");
+  min-height: 400px;
 }
 
 .caption {
@@ -54,87 +84,16 @@
   margin-top: 50px;
 }
 
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+}
 
 body, html, .main {
     height: 100%;
 }
 
-@-moz-keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
-            -moz-transform: translateY(0);
-            transform: translateY(0);
-        }
-        40% {
-            -moz-transform: translateY(-30px);
-            transform: translateY(-30px);
-        }
-        60% {
-            -moz-transform: translateY(-15px);
-            transform: translateY(-15px);
-        }
-    }
-    @-webkit-keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-        }
-        40% {
-            -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-        }
-        60% {
-            -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
-        }
-    }
-    @keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
-            -moz-transform: translateY(0);
-            -ms-transform: translateY(0);
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-        }
-        40% {
-            -moz-transform: translateY(-30px);
-            -ms-transform: translateY(-30px);
-            -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-        }
-        60% {
-            -moz-transform: translateY(-15px);
-            -ms-transform: translateY(-15px);
-            -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
-        }
-    }
-
-    .glyphicon-chevron-down {
-        color: white;
-        margin-top: 200px;
-        font-size: 38px;
-    }
-    
-    .glyphicon-print{
-    	color: white;
-    }
-
-    .bounce {
-        -moz-animation: bounce 2s infinite;
-        -webkit-animation: bounce 2s infinite;
-        animation: bounce 2s infinite;
-    }
-    
-    .container {
-      width: 50%;
-    }
-
-.animate {
-    -webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
 
 .navbar-bootsnipp {
     background-color: rgb(255, 255, 255);
@@ -159,12 +118,6 @@ body, html, .main {
 }
 .navbar-bootsnipp .navbar-toggle .icon-bar {
 	background-color: rgb(95, 176, 228);
-}
-
-.navbar-bootsnipp .navbar-brand {
-	color: rgb(95, 176, 228);
-	font-weight: 900;
-	letter-spacing: 2px;
 }
 
 .navbar-bootsnipp .navbar-nav > li > a {
@@ -235,33 +188,6 @@ body, html, .main {
 	width: 100%;
 }
 
-.navbar-bootsnipp .bootsnipp-search {
-	display: none;
-}
-.navbar-bootsnipp .bootsnipp-search .form-control {
-	background-color: rgb(235, 235, 235);
-	border-radius: 0px;
-	border-width: 0px;
-	font-size: 24px;
-	padding: 30px 0px;
-}
-.navbar-bootsnipp .bootsnipp-search .form-control {
-	background-color: rgb(235, 235, 235);
-	border-radius: 0px;
-	border-width: 0px;
-	font-size: 24px;
-	padding: 25px 0px;
-}
-.navbar-bootsnipp .bootsnipp-search .form-control:focus {
-	border-color: transparent;
-	outline: 0;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-}
-.navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn {
-	padding: 14px 16px;
-	border-radius: 0px;
-}
 .navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn.active,
 .navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn:hover,
 .navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn:focus {
@@ -298,37 +224,6 @@ body, html, .main {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-
-
-	.navbar-bootsnipp .bootsnipp-search {
-		background-color: rgb(235, 235, 235);
-		display: block;
-		position: absolute;
-		top: 100%;
-		width: 100%;
-		-webkit-transform: rotateX(-90deg);
-		-moz-transform: rotateX(-90deg);
-		-o-transform: rotateX(-90deg);
-		-ms-transform: rotateX(-90deg);
-		transform: rotateX(-90deg);
-		-webkit-transform-origin: 0 0 0;
-		-moz-transform-origin: 0 0 0;
-		-o-transform-origin: 0 0 0;
-		-ms-transform-origin: 0 0 0;
-		transform-origin: 0 0 0;
-		visibility: hidden;
-	}
-	.navbar-bootsnipp .bootsnipp-search.open {
-		-webkit-transform: rotateX(0deg);
-		-moz-transform: rotateX(0deg);
-		-o-transform: rotateX(0deg);
-		-ms-transform: rotateX(0deg);
-		transform: rotateX(0deg);
-		visibility: visible;	
-	}
-	.navbar-bootsnipp .bootsnipp-search > .container {
-		padding: 0px;
-	}    
 }
 
 #hermanlogo {
@@ -337,117 +232,124 @@ body, html, .main {
     margin-top: -9px;
 }
 
-h1{
-    font-size:4.5em;
+#bottom {
+	margin-top: -310px;
 }
 
-
- .img-quadrata {
-       border-radius:50%;
-       width:250px;
-       height:250px;
+footer{
+	background-color: #000;
 }
 
-h3{
-    	
-        font-family: Century Gothic;
-        color:black;
-}
-small{
-		text-align:center;
-        text-decoration:underline;
-        color:gray;
-}
-
-body {
+p {
 	text-align: center;
 }
 
-
-#about {
-	margin-top: -50px;
-}
-
-#info {
-	background: rgb(255,255,255);
-}
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,800);
-@import url(https://fonts.googleapis.com/css?family=Fontdiner+Swanky);
-#put_unique_id_here {
-  padding: 0;
-  overflow: hidden;
-  display: inline-block;
-  width: 100%;
-  background-color: red;
-}
-
-#bizar-links-2 .hero {
-  position: relative;
-  overflow: hidden;
-  min-height: 395px;
-  background: #000000;
-  margin-left: -15px;
-  margin-right: -15px;
-  margin-top: 113px;
-}
-
-#bizar-links-2 .hero h1,
-.hero {
-  text-align: center;
-  color: #fff;
-  padding: 20px 0 10px 0;
-  position: relative;
-  z-index: 2;
-  font-family: arial, helvetica, "san-serif";
-  font-size: 1.4em;
-  text-transform: uppercase;
-  letter-spacing: 8px;
-}
-
-#bizar-links-2 .hero p {
-  font-size: 15px;
-  padding: 0;
-}
-
-#bizar-links-2 .hero img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  z-index: -10;
-  min-width:100%;
-  min-height:100%
-}
-
-#bizar-links-2 img {
-  opacity: 0.5;
-  
-}
-
-#bizar-links-2 .btn-default {
-  color: #000;
-  background-color: #fff;
-  border-color: #ccc;
-  margin-bottom: 7pt;
-  font-family: arial, helvetica, "san-serif";
-  opacity: 0.8;
-}
-
-h2 {
-    font-family: Century Gothic;
-}
-
 #affil {
-    letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #ddd;
-}
-#affilp {
 	font-size: 26px;
 	color: white;
 	
+}
+
+
+
+#nav {
+    width: 800px;
+}
+
+
+#mainpicture {
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+
+@keyframes bouncing {
+    0% {bottom: 0;}
+    50% {bottom: 20px;}
+    100% {bottom: 0;}
+}
+
+.arrow {
+    animation: bouncing 1s infinite ease-in-out;
+    height: -50px;
+    left: 50%;
+    position: absolute;
+
+}
+
+.lib-panel {
+    margin-bottom: 20Px;
+}
+.lib-panel img {
+    width: 80%;
+    background-color: transparent;
+}
+
+.lib-panel .row,
+.lib-panel .col-md-6 {
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+
+.lib-panel .lib-row {
+    padding: 0 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header {
+    background-color: #FFFFFF;
+    font-size: 20px;
+    padding: 10px 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header .lib-header-seperator {
+    height: 2px;
+    width: 26px;
+    background-color: #d9d9d9;
+    margin: 7px 0 7px 0;
+}
+
+.lib-panel .lib-row.lib-desc {
+    position: relative;
+    height: 100%;
+    display: block;
+    font-size: 13px;
+}
+.lib-panel .lib-row.lib-desc a{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 20px;
+}
+
+#children {
+    margin-top:60px;
+    color:white;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+h5 {
+  font-size: 20px;
+}
+
+#main {
+    max-width: 70%;
+}
+
+#text {
+  font-size: 16px;
+  text-align: left;
+  color:black;
+}
+
+th {
+  color:black;
+  font-size: 18px;
+  font-weight:normal;
 }
 </style>
 
@@ -456,11 +358,17 @@ function myFunction() {
     window.print();
 }
 
+$("#children").ready(function() {
+ $("filter").fadeOut('slow');   
+});
+
+
+
 </script>
 
 <body>
 <nav class="[ navbar navbar-fixed-top ][ navbar-bootsnipp animate ]" role="navigation">
-    	<div class="[ container ]">
+    	<div class="[ container-fluid ]">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="[ navbar-header ]">
 				<button type="button" class="[ navbar-toggle ]" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -470,169 +378,148 @@ function myFunction() {
 					<span class="[ icon-bar ]"></span>
 				</button>
 				<div class="[ animbrand ]">
-					<a class="[ navbar-brand ][ animate ]" href="index.html"><img src="assets/img/hermanlogo.png" id=hermanlogo></a>
+					<a class="[ navbar-brand ][ animate ]" href="#"><img src="assets/img/hermanlogo.png" id=hermanlogo></a>
 				</div>
 			</div>
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="[ collapse navbar-collapse ]" id="bs-example-navbar-collapse-1">
+		
+			<div class="container-fluid" id="nav">
 				<ul class="[ nav navbar-nav navbar-right ]">
-					<li class="[ visible-xs ]">
-						<form action="http://bootsnipp.com/search" method="GET" role="search">
-							<div class="[ input-group ]">
-								<input type="text" class="[ form-control ]" name="q" placeholder="Search for snippets">
-								<span class="[ input-group-btn ]">
-									<button class="[ btn btn-primary ]" type="submit"><span class="[ glyphicon glyphicon-search ]"></span></button>
-									<button class="[ btn btn-danger ]" type="reset"><span class="[ glyphicon glyphicon-remove ]"></span></button>
-								</span>
-							</div>
-						</form>
-					</li>
-					<li><a class="animate" href="index.html">Home</span></a></li>
-					<li class="active"><a href="#" class="[ animate ]">About</a></li>
-				
-					<li><a class="animate" href="services.html">Products & Services</a></li>
-					<li><a class="animate" href="contact.html">Contact Us</a></li>
-					<li class="animate"><a class="animate" disabled><span class="glyphicon glyphicon-earphone"></span> 204-623-1400</a></li>
-</a></li>
+			
+					
 
 					
-                    		</ul>
+					<li><a class="animate" href="index.html">Home</a></li>
+					<li class="active"><a href="about.html" class="[ animate ]">About</a></li>
+				
+			<!--		<li><a class="animate" href="services.html">Products & Services</a></li>-->
+					<li><a class="animate" href="contact.html">Contact Us</a></li>
+					<li class="testing"><a disabled><span class="glyphicon glyphicon-earphone"></span> 204-623-1400</a></li>
+					
+
+					
+					
+				
+
+					
+                    		</ul> 
 			</div>
 		</div>
 	</nav>
-<!--
-Bootstrap Line Tabs by @keenthemes
-A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
-Licensed under MIT
--->
-
-<section id="bizar-links-2">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="hero">
-            	<br>
-              <h1>Communty</h1>
-
-              <a class="btn btn-default" href="" role="button" disabled>A small team <br>aiding the local <br>community</a>
-
-              <img src="assets/img/community.jpg">
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="hero">
-            	<br>
-              <h1>Expertise</h1>
-
-              <a class="btn btn-default" disabled role="button">Established in 1999<br>by Dr. Garry and<br> Lavonne Herman</a> <br>
-           
-              <img src="assets/img/store.jpg">
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="hero">
-            	<br>
-              <h1>Quality</h1>
-              <a class="btn btn-default" role="button" disabled>Aim to provide<br> quality vision care<br> and hometown service.</a>
-
-
-              <img src="assets/img/quality.jpg">
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</section>
-   <div class="section" id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="page-header">
-        <center><h2>Our <font color="#B09A75">Great Team</font></h2></center> 
-    </div>
-                </div>
-                <div class="row">
+	<div class="container-full">
+ <div class="container-full" id="children">
+    <img src="assets/img/store3.jpg" alt="..." class="center-block" width=100%>
+<br>
+              <!--  <p style="font-size: 30px; text-align:center;"><br><br><br>
+                <em>Ambiguity to Clarity</em>  <br><br></p><br> -->
                 
-                
-                    <div class="col-md-4">
-                        <img src="assets/img/tra.jpg"
-                        class="img-quadrata center-block" >
-                        <h3 class="text-center" >Dr. Tra Sin
-                        <br/>
-                        <small>Optometrist</small></h3>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="assets/img/girl1.jpg"
-                        class="center-block img-quadrata" >
-                        <h3 class="text-center" >Girl 1
-                        <br/>
-                        <small>Occupation</small></h3>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="assets/img/girl2.jpg"
-                        class="center-block img-quadrata">
-                        <h3 class="text-center">Girl 2
-                        <br/>
-                        <small>Occupation</small></h3>
-                    </div>
-                    
-                </div>
-                <div class="row">
-                
-                
-                    <div class="col-md-4">
-                        <img src="assets/img/guy1.jpg"
-                        class="img-quadrata center-block" >
-                        <h3 class="text-center" >Guy 1
-                        <br/>
-                        <small>Occupation</small></h3>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="assets/img/ninja.jpg"
-                        class="center-block img-quadrata" >
-                        <h3 class="text-center" >Tommy Le
-                        <br/>
-                        <small>Ninja</small></h3>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="assets/img/baby.jpg"
-                        class="center-block img-quadrata">
-                        <h3 class="text-center">Baby
-                        <br/>
-                        <small>Poop</small></h3>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-
- <!--  <div style="color:black;background-color:#F4F3EF;text-align:center;padding:50px 80px;text-align: justify;">
-    	<div class="page-header" ><center><h2>Our <strong>Clinic Info</strong></h2></center></div>
-   
-      <p>Herman Eye Care was established in 1999 by Dr. Garry and Lavonne Herman. Dr. Garry serves as one of our knowledgeable optometrists along with Dr. Tra Sin who has 6 years of professional experience.
-<br><br>With our training and personal approach at Herman Eye Care, we aim to provide quality vision care and hometown service.
-<br><br>Along with our wonderful doctors, we also have a dedicated staff which includes:
-
-<br>Shelly Armstrong (20 years of experience)
-<br>Debbie Krys (20 years of experience)
-<br>Jodie Ricard (4 years of experience)
-</p>
-
-      </div>-->
-
-<div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: center;">
-  	<h3 style="text-align:center;" id=affil>Professional Affiliations</h3><br>
-    <p id="affilp"><a href="https://opto.ca/">The Canadian Association of Optometrists</a> | <a href="http://www.optometrists.mb.ca/">Manitoba Association of Optometrists</a> | <a href="http://www.eyerecommend.ca/">Eye Recommend Eye Care Network</a></p> 
-    <br><img src="assets/img/bright.jpg">
-    </div>
+         
 </div>
+	
+<div class="container-fluid" id="main">
+  <div class="jumbotron" style="background-color: white;">
+  <!--  <div class="page-header" style="text-align: center;"><h3>Our Mission</h3>
+    
+    </div>
+    <p style="text-align: center; font-size:20px">To provide excellent eye care services to the surrounding area of The Pas, MB.</p>-->
+    
+   <div class="page-header"><h3 style="text-align: center; margin-top: -40px">About</h3>
+    </div>
+    <p style="font-size:20px; color:black;">	Herman Eye Care is a local optometry centre that provides vision care services to a wide variety of clients in the The Pas area. Whether you are in need of regular eye examinations or treatment for a particular eye condition, our friendly staff can be of service.
+	<br><br>	At Herman Eye Care, we carry a number of vision correction products that cater to a variety of styles and ways of life. Stop in to learn more about our selection, and find the product that is right for you.
+We also dispense comfortable contacts matched to your specific prescription.
+<br>
+<br>Schedule an appointment to learn more about how we can take care of your vision.
+
+</p>
+     <div class="page-header"><h3 style="text-align: center;">Eye Care Services</h3>
+    </div>
+    <table align="center">
+      <tr>
+        <th>&bull;Complete Vision & Eye Care &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>&bull;Glasses Adjustments & Repairs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+      </tr>
+      <tr>
+        <th>&bull;Contact Lens Fitting&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>&bull;Dry Eye and Glaucoma Assessments&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+      </tr>
+      <tr>
+        <th>&bull;Laser Co-Management&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>&bull;Digital Retinal Imaging&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+      </tr>
+      <tr>
+        <th>&bull;Non-prescription Sunglasses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>&bull;Ocular Disease Management&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+      </tr>
+      <tr>
+        <th>&bull;Emergency Appointments&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+      </tr>
+    </table>
+  </div>
+  
+   <div class="jumbotron" style=" background-color: white;">
+<div class="page-header" style="text-align: center;"><h3>Optometrists</h3></div>
+   <!-- <div class="row">
+      <div class="col-md-6" style="text-align:center;">
+        <img src="assets/img/tra.jpg" style="max-width:100%;">
+        <h5 style="text-align: center; font-size: 26px;">Dr. Tra Sin</h5>
+      </div>
+      
+      <div class="col-md-6" style="text-align:center;">
+        <img src="assets/img/thuy.jpg" style="max-width:100%;">
+        <h5 style="text-align: center; font-size:26px;">Dr. Thuy Le</h5>
+      </div>
+      
+      
+    </div>-->
+    
+    <div class="no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-md-6">
+                           <!-- <img src="assets/img/chicken2.jpg"> -->
+                        </div>
+                        
+                            <div class="lib-row lib-header">
+                                <h3>Dr. Tra Sin</h3>
+                                <h5>Optometrist</h5>
+                                <p id="text">Dr. Tra Sin graduated with honours in 2007 from University of Waterloo with a Bachelor of Science and Doctor of Optometry degrees. During his seven years in university, Dr. Tra worked as a contact lens research assistant at the Centre for Contact Lens Research located in University of Waterloo. He completed his externship at the Scarborough Eye Clinic where he gained invaluable clinical experience in the treatment of ocular disease.
+
+Upon graduation, Dr. Tra wanted to practice in a small town setting and decided to move his family to The Pas.<br><br> In his spare time, Dr. Sin enjoys spending time with his wife and two young children as well as playing badminton.</p>
+                            </div></div></div></div><div class="no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-md-6">
+                           <!-- <img src="assets/img/chicken2.jpg"> -->
+                        </div>
+                        
+                            <div class="lib-row lib-header">
+                                <h3>Dr. Garry Herman</h3>
+                                <h5>Optometrist</h5>
+                                <p id="text">Dr. Herman is a native of The Pas. He attended the University of North Dakota and worked toward a Bachelor of Natural Science degree from 1989-1992. In 1996, he graduated from University of Waterloo School of Optometry. He completed his ocular pathology and therapeutics externship at Kaiser-Permanente in Washington DC. Upon graduation, Dr. Herman worked in Tisdale, SK for 3
+
+years. In 1999, Dr. Herman returned home to The Pas and opened the present practice with his wife Lavonne. He is qualified to prescribe therapeutics for the treatment and management of eye diseases.
+
+<br><br>Outside of optometry Dr. Herman is a grain farmer. He spent many years as a volunteer coach for in the local hockey association. He enjoys spending time with his wife and three children.</p>
+                            </div></div></div></div>
+    
+  </div>
+  
+  
+</div>
+
+    
+
+
+ <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: center;">
+  	<h3 style="text-align:center;">Professional Affiliations</h3><br>
+    <p id="affil"><a href="https://opto.ca/">The Canadian Association of Optometrists</a> | <a href="http://www.optometrists.mb.ca/">Manitoba Association of Optometrists</a> | <a href="http://www.eyerecommend.ca/">Eye Recommend Eye Care Network</a></p> 
+    <br><img src="assets/img/bright.jpg">
+    </div> 
+  
+</div>
+
+
 
 </body>
 

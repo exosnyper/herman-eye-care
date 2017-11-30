@@ -343,32 +343,17 @@ p {
     width: 800px;
 }
 
-#mainpicture {
-  max-width: 100%;
-  max-height: 100%;
-  text-align: center;
-  position: relative;
+#pic1 {
+text-align: center;
+  width: 90%;
+  background-color: white;
 }
 
-
-@keyframes bouncing {
-    0% {bottom: 0;}
-    50% {bottom: 20px;}
-    100% {bottom: 0;}
+#pic2 {
+	background-color:#F5F5F5;
+	text-align: center;
 }
 
-.arrow {
-    animation: bouncing 1s infinite ease-in-out;
-    height: -50px;
-    left: 50%;
-    position: absolute;
-
-}
-
-
-h5 {
-  font-size: 20px;
-}
 
 </style>
 
@@ -421,82 +406,151 @@ function myFunction() {
 			</div>
 		</div>
 	</nav>
-<div class="container-full" >
-  <div class="container-full">
-    <img src="assets/img/1.png" id="mainpicture">
-   <!--  <img class="arrow" src="assets/img/chevron-down.png" id="arrow">-->
-  </div>
-  
-  <div style="position:relative;">
-  <div style="color:black;background-color:#f7f7f7;text-align:center;padding:50px 80px;text-align:center;margin-top:-5px;">
-
-  <h3 style="text-align:center;color:black;">Our Story</h3><br>
-  <p>Herman Eye Care has been serving The Pas and the surrounding communities for 17 years. Our practice provide comprehensive eye care for all family members of different ages from babies to seniors. We work closely with Ophthalmologists and local family practitioners to provide full management of eye diseases and disorders. Whether you are in need of regular eye examinations or treatment for a particular eye disease, our friendly staff can help.</p><br><br>
-<a href="contact.html"><b>Call us</b></a> if you have any questions that you may have or to schedule an appointment. We would love to hear from you.</p>
- </div>
- 
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					 
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button> <a class="navbar-brand" href="#">Brand</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">Link</a>
+						</li>
+						<li>
+							<a href="#">Link</a>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Action</a>
+								</li>
+								<li>
+									<a href="#">Another action</a>
+								</li>
+								<li>
+									<a href="#">Something else here</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a href="#">Separated link</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a href="#">One more separated link</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" />
+						</div> 
+						<button type="submit" class="btn btn-default">
+							Submit
+						</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#">Link</a>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Action</a>
+								</li>
+								<li>
+									<a href="#">Another action</a>
+								</li>
+								<li>
+									<a href="#">Something else here</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a href="#">Separated link</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+			</nav>
+			
+			<div class="col-md-12">
+			<div class="col-md-6">
+			<div class="jumbotron" id="pic1">
+				<h2>
+					Herman Eye Care
+				</h2>
+				<p>
+				Herman Eye Care is a local optometry centre that provides vision care services to a wide variety of clients in the The Pas area. Whether you are in need of regular eye examinations or treatment for a particular eye condition, our friendly staff can be of service.		</p>
+				<p>
+					<a class="btn btn-primary btn-large" href="#">Learn more</a>
+				</p>
+			</div>
+			</div>
+			
+			<div class="col-md-6">
+				<div class="jumbotron" id="pic2">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2355.1699813241767!2d-101.25328378372569!3d53.82205178008159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52f9eb5998eeeb5d%3A0x4f066826a356cf2f!2s362+Fischer+Ave%2C+The+Pas%2C+MB+R9A!5e0!3m2!1sen!2sca!4v1481240211776" frameborder="1" style="border:2" allowfullscreen></iframe>
+      
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-4">
+			<h2>
+				Eyewear
+			</h2>
+			<p>
+			Find eyeglasses and sunglasses that offer you the functionality and aesthetic style that you are looking for.	</p>
+		
+		</div>
+		<div class="col-md-4">
+			<h2>
+				Contacts
+			</h2>
+			<p>
+			We also dispense comfortable contacts matched to your specific prescription.	</p>
+		
+		</div>
+		<div class="col-md-4">
+			<h2>
+				Ask Us
+			</h2>
+			<p>
+			Schedule an appointment to learn more about how we can take care of your vision.	</p>
+		
+		</div>
+	</div>
 </div>
-<!--
-<div style="position:relative;">
-  <div style="color:black;background-color:#ffffff;text-align:center;padding:50px 80px;text-align:center;margin-top:-5px;">
 
-  <h3 style="text-align:center;color:black;">Our Products and Services</h3><br>
 
-          <div class="row" id="products">
-      <div class="col-md-3">
-        <div class="box">
-          <div class="box-icon"> <img src="assets/img/documentsthumbnail.png" width="250px" height="250px"></div>
-          <div class="info">
-            <h5 class="text-center">Eye Exams</h5>
-             </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="box">
-          <div class="box-icon"> <span class="fa fa-4x fa-plus"></span> </div>
-          <div class="info">
-            <h5 class="text-center">Diagnosis and treatment of eye disease</h5>
-            </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="box">
-          <div class="box-icon"> <span class="fa fa-4x fa-book"></span> </div>
-          <div class="info">
-            <h5 class="text-center">Surgical co-management</h5>
-             </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="box">
-          <div class="box-icon"> <span class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></span> </div>
-          <div class="info">
-            <h5 class="text-center">and much more</h5>
-             </div>
-        </div>
-      </div>
-
- 
-  </div>
- 
 </div>
-</div>-->
- 
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: center;">
-  	<h3 style="text-align:center;">Professional Affiliations</h3><br>
-    <p id="affil"><a href="https://opto.ca/">The Canadian Association of Optometrists</a> | <a href="http://www.optometrists.mb.ca/">Manitoba Association of Optometrists</a> | <a href="http://www.eyerecommend.ca/">Eye Recommend Eye Care Network</a></p> 
-    <br><img src="assets/img/bright.jpg">
-    </div> 
-    
-
-
- 
-  
 </div>
-
-
-
 </body>
 
+<footer id="footer">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:10px;text-align: center;">
+  	<h3 style="text-align:center;">Professional Affiliations</h3><br>
+    <p id="affil"><a href="https://opto.ca/">The Canadian Association of Optometrists</a> | <a href="http://www.optometrists.mb.ca/">Manitoba Association of Optometrists</a> | <a href="http://www.eyerecommend.ca/">Eye Recommend Eye Care Network</a></p> 
+
+    </div>
+  
+</footer>
 
 </html>

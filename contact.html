@@ -32,9 +32,23 @@
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
-  background-color:#F4F3EF!important;
-  
+  color: #777; /*
+  background-color: #F4F3EF; */
+
+}
+
+.bgimg-2 {
+  position: relative;
+  opacity: 0.6;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-2 {
+  background-image: url("assets/img/glasses2.jpg");
+  min-height: 400px;
 }
 
 .caption {
@@ -64,83 +78,6 @@ h3 {
 
 body, html, .main {
     height: 100%;
-}
-
-@-moz-keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
-            -moz-transform: translateY(0);
-            transform: translateY(0);
-        }
-        40% {
-            -moz-transform: translateY(-30px);
-            transform: translateY(-30px);
-        }
-        60% {
-            -moz-transform: translateY(-15px);
-            transform: translateY(-15px);
-        }
-    }
-    @-webkit-keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-        }
-        40% {
-            -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-        }
-        60% {
-            -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
-        }
-    }
-    @keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
-            -moz-transform: translateY(0);
-            -ms-transform: translateY(0);
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-        }
-        40% {
-            -moz-transform: translateY(-30px);
-            -ms-transform: translateY(-30px);
-            -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-        }
-        60% {
-            -moz-transform: translateY(-15px);
-            -ms-transform: translateY(-15px);
-            -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
-        }
-    }
-
-    .glyphicon-chevron-down {
-        color: white;
-        margin-top: 200px;
-        font-size: 38px;
-    }
-    
-    .glyphicon-print{
-    	color: white;
-    }
-
-    .bounce {
-        -moz-animation: bounce 2s infinite;
-        -webkit-animation: bounce 2s infinite;
-        animation: bounce 2s infinite;
-    }
-    
-    .container {
-      width: 50%;
-    }
-
-.animate {
-    -webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
 }
 
 .navbar-bootsnipp {
@@ -410,9 +347,6 @@ body, html, .main {
 	width: 120px;/*margin-top: -61px;*/
 }
 
-#test {
-    margin-top: 90px;
-}
 
 #products{
     background: rgb(255,255,255);
@@ -421,13 +355,48 @@ body, html, .main {
 }
 
 .well {
-    background: rgb(244, 243, 239);
+    background: rgb(255,255,255);
 }
 
-.block1 {color:black;width:100%;;border:1px solid green; height: 750px;background-color:white;}
+#msg{
+	margin: auto;
+	width: 80%;
+	height: 750px;
+}
+
+.block1 {color:black;width:80%;height: 750px; border: 0px solid; }
       .block3 {float:left; width:700px; padding-left:50px;padding-top: 50px;}
-      .block2 {color:black;width:400px;border:0px ;position:relative;float:right;background-color: white;padding-top: 50px; padding-right: 50px;}
+      .block2 {color:black;width:400px;border:0px;position:relative;float:right;;padding-top: 50px; padding-right: 50px;}
     
+    a.darken {
+    display: inline-block;
+   
+    padding: 0;
+}
+
+a.darken img {
+    display: block;
+
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 0.7;
+
+}
+
+#nav {
+    width: 800px;
+}
+
+#block3 {
+	width: 600px;
+}   
+   
 </style>
 
 <script>
@@ -461,26 +430,16 @@ function myFunction() {
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="[ collapse navbar-collapse ]" id="bs-example-navbar-collapse-1">
+			<div class="container-fluid" id="nav">
 				<ul class="[ nav navbar-nav navbar-right ]">
-					<li class="[ visible-xs ]">
-						<form action="http://bootsnipp.com/search" method="GET" role="search">
-							<div class="[ input-group ]">
-								<input type="text" class="[ form-control ]" name="q" placeholder="Search for snippets">
-								<span class="[ input-group-btn ]">
-									<button class="[ btn btn-primary ]" type="submit"><span class="[ glyphicon glyphicon-search ]"></span></button>
-									<button class="[ btn btn-danger ]" type="reset"><span class="[ glyphicon glyphicon-remove ]"></span></button>
-								</span>
-							</div>
-						</form>
-					</li>
+					
 					<li><a class="animate" href="index.html">Home</a></li>
 					<li><a href="about.html" class="[ animate ]">About</a></li>
 				
-					<li><a class="animate" href="services.html">Products & Services</a></li>
+				<!--	<li><a class="animate" href="services.html">Products & Services</a></li> -->
 					<li class="active"><a class="animate" href="#">Contact Us</a></li>
 					<li class="animate"><a class="animate" disabled><span class="glyphicon glyphicon-earphone"></span> 204-623-1400</a></li>
-</a></li>
+
 
 					
                     		</ul>
@@ -492,14 +451,31 @@ Bootstrap Line Tabs by @keenthemes
 A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
 Licensed under MIT
 -->
-<div clsas="container-fluid" id=test>
-<div class='block1'>
 
-        <div class='block3'>
+<div class="bgimg-2">
+ 
+</div>
+
+<div clsas="container-fluid" id="test">
+<div class='center-block block1'>
+
+        <div class='block3' id="block3">
         	<h4>Visit Us at Herman Eye Care in The Pas</h4>
-            <p>Herman Eye Care provides eye exams and also dispenses eyeglasses, contact lenses and sunglasses. If you are interested in learning more about our products and services, or if you would like to schedule an appointment, please feel free to give us a call.</p>
-            <p>If you are visiting our office, we are located on Highway 10 across from the RCMP station.</p>
+            <p id="q1">Herman Eye Care provides eye exams and also dispenses eyeglasses, contact lenses and sunglasses. If you are interested in learning more about our products and services, or if you would like to schedule an appointment, please feel free to give us a call.</p>
+            <p id="q1">If you are visiting our office, we are located on Highway 10 across from the RCMP station.</p>
+            <p id="q1">Parking is offered on the east side of the building and in the back.</p>
+            <p id="q1">For emergencies, please go to The Pas Hospital</p>
+            <h4>Send Us a Message</h4>
             
+       <!--     <a href="https://goo.gl/forms/bgur4ynYKdVfkTRt2" class="darken">
+		<img src="assets/img/email.png" width="40px">
+	</a> -->
+            
+            <a href="https://www.facebook.com/Herman-Eye-Care-163112233789039/?pnref=lhc" class="darken"> 
+	
+	<img src="assets/img/facebook.png" width=40px></a>
+	
+	
             <h4>Service Area</h4>
             <li>The Pas</li>
             <li>OCN</li>
@@ -510,7 +486,8 @@ Licensed under MIT
             <div class="payment-wrapper clearfix" style="text-align: left;"><img class="item" src="assets/img/visa.png" width="55" height="36" title="Visa" alt="Visa" style="padding-right: 0px;padding-left: 0px;"/><img class="item" src="assets/img/mastercard.png" width="55" height="36" title="Master Card" alt="Master Card" style="padding-right: 0px;padding-left: 0px;"/><img class="item" src="assets/img/cash.png" width="55" height="36" title="Cash" alt="Cash" style="padding-right: 0px;padding-left: 0px;"/><img class="item" src="assets/img/cheque.png" width="55" height="36" title="Cheque" alt="Cheque" style="padding-right: 0px;padding-left: 0px;"/></div>
   <br>
   
- 
+  
+
  
  </div>
 
@@ -522,6 +499,10 @@ Licensed under MIT
      
         <b>Phone</b>
         <p>204-623-1400</p>
+        
+        <b>Toll Free</b>
+        <p>1-800-204-623-1402</p>
+        
         <b>Opening Hours</b>
         <p>Monday - Friday: 8:30AM to 12:30PM & 1:00PM to 5:00PM<br>
         Saturday & Sunday: Closed
@@ -532,6 +513,14 @@ Licensed under MIT
 
     </div>
 </div>
+
+	</div>
+	<div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: center;">
+  	<h3 style="text-align:center;">Professional Affiliations</h3><br>
+    <p id="affil"><a href="https://opto.ca/">The Canadian Association of Optometrists</a> | <a href="http://www.optometrists.mb.ca/">Manitoba Association of Optometrists</a> | <a href="http://www.eyerecommend.ca/">Eye Recommend Eye Care Network</a></p> 
+    <br><img src="assets/img/bright.jpg">
+    </div> 
+	
 </body>
 
 

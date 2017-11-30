@@ -35,6 +35,20 @@
   background-color:#282E34;
 }
 
+.bgimg-2 {
+  position: relative;
+  color: white;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-2 {
+  background-image: url("assets/img/photo4.png");
+  min-height: 500px;
+}
+
 .caption {
   position: absolute;
   left: 0;
@@ -258,6 +272,7 @@ body, html, .main {
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
+
 .navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn {
 	padding: 14px 16px;
 	border-radius: 0px;
@@ -369,7 +384,7 @@ body, html, .main {
 	color: #555454;
 	font-size: 22px;
 	margin: 0px;
-	font-family: Century Gothic;
+	font-family: Arial;
 	font-weight: 100;
 	padding: 28px 0px;
 	text-transform: uppercase;
@@ -432,15 +447,21 @@ body, html, .main {
     .col-padding {
         padding: 0 15px;
     }
-}
+
 
 p {
-    font-family: century gothic;
+    font-family: "Calibri";
 }
 
 h2 {
-    font-family: Century Gothic;
+        font-family: "Calibri";
+        color:black;
 }
+
+#nav {
+    width: 800px;
+}
+
 </style>
 
 <script>
@@ -467,26 +488,15 @@ function myFunction() {
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="[ collapse navbar-collapse ]" id="bs-example-navbar-collapse-1">
+			<div class="container-fluid" id="nav">
 				<ul class="[ nav navbar-nav navbar-right ]">
-					<li class="[ visible-xs ]">
-						<form action="http://bootsnipp.com/search" method="GET" role="search">
-							<div class="[ input-group ]">
-								<input type="text" class="[ form-control ]" name="q" placeholder="Search for snippets">
-								<span class="[ input-group-btn ]">
-									<button class="[ btn btn-primary ]" type="submit"><span class="[ glyphicon glyphicon-search ]"></span></button>
-									<button class="[ btn btn-danger ]" type="reset"><span class="[ glyphicon glyphicon-remove ]"></span></button>
-								</span>
-							</div>
-						</form>
-					</li>
+			
 					<li><a class="animate" href="index.html">Home</a></li>
 					<li><a href="about.html" class="[ animate ]">About</a></li>
 				
 					<li class="active"><a class="animate" href="#register">Products & Services</a></li>
 					<li><a class="animate" href="contact.html">Contact Us</a></li>
 					<li class="animate"><a class="animate" disabled><span class="glyphicon glyphicon-earphone"></span> 204-623-1400</a></li>
-</a></li>
 
 					
                     		</ul>
@@ -508,42 +518,23 @@ Licensed under MIT
         <center><h2>Our <font color="#B09A75">Services</font></h2></center>
     </div>
     </div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="box">
-          <div class="box-icon"> <span class="fa fa-4x fa-eye"></span> </div>
-          <div class="info">
-            <h4 class="text-center">Eye Exams</h4>
-             </div>
+   <div class="row grid-divider">
+    <div class="col-sm-4">
+      <div class="col-padding">
+        <center><h3>Eye Exams</h3></center>
         </div>
-      </div>
-      <div class="col-md-3">
-        <div class="box">
-          <div class="box-icon"> <span class="fa fa-4x fa-plus"></span> </div>
-          <div class="info">
-            <h4 class="text-center">Diagnosis and treatment of eye disease</h4>
-            </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="box">
-          <div class="box-icon"> <span class="fa fa-4x fa-book"></span> </div>
-          <div class="info">
-            <h4 class="text-center">Surgical co-management</h4>
-             </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="box">
-          <div class="box-icon"> <span class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></span> </div>
-          <div class="info">
-            <h4 class="text-center">and much more</h4>
-             </div>
-        </div>
-      </div>
-      
     </div>
-
+    <div class="col-sm-4">
+      <div class="col-padding">
+        <center><h3>Diagnosis and Treatment of Eye Disease</h3></center>
+       </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="col-padding">
+        <center><h3>Surgical Co-Management</h3></center>
+        </div>
+    </div>
+    </div>
 <!--<div class="page-header">
 	<center><h2>Vision Correction Products</h2></center>
 </div>
@@ -618,8 +609,15 @@ Licensed under MIT
     </div>
 
 </div>
-
+<br><br>
     </div>
+    
+    <div class="bgimg-2">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px; color: white;text-shadow: 2px 2px 8px #000000;">clarity</span>
+  </div>
+</div>
+    
   <!--  <div style="color: #ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;" id=jump>
  <div class="row">
       <div class="page-header">
@@ -664,14 +662,14 @@ Schedule an appointment to learn more about how we can take care of your vision.
       
     </blockquote>
     
-</div>-->
+</div>
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: center;">
   	<h3 style="text-align:center;"> EYEWEAR</h3><br>
     <p>At Herman Eye Care, we carry a number of vision correction products that cater to a variety of styles and ways of life. Stop in to learn more about our selection, and find the product that is right for you.</p>
 
     </div>
-</div>
+</div> -->
 
 </body>
 
